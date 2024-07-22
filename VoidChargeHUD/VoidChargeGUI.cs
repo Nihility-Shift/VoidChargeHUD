@@ -44,7 +44,7 @@ namespace VoidChargeHUD
             if (guiActive)
             {
                 UnityEngine.GUI.Window(718107, WindowPos, null,
-                    $"<color=#ffffff><size=15><b>{voidDrive.JumpCharge*100:0}%</b></size></color>", GUIStyle.none);
+                    $"<color=#ffffff><size={Configs.TextSizeConfig.Value}><b>{voidDrive.JumpCharge*100:0}%</b></size></color>", GUIStyle.none);
             }
         }
     }

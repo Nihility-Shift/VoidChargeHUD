@@ -10,7 +10,7 @@ namespace VoidChargeHUD
     {
         internal const string PLUGIN_GUID = "id107.voidchargehud";
         internal const string PLUGIN_NAME = "VoidChargeHUD";
-        internal const string PLUGIN_VERSION = "0.0.0";
+        internal const string PLUGIN_VERSION = "0.0.1";
     }
 
     [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]

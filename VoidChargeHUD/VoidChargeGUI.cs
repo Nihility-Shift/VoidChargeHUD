@@ -3,6 +3,7 @@ using CG.Game;
 using CG.Ship.Modules;
 using Photon.Pun;
 using UnityEngine;
+using VoidManager.Utilities;
 
 namespace VoidChargeHUD
 {
@@ -30,12 +31,12 @@ namespace VoidChargeHUD
 
         private void Update()
         {
-            bool shouldBeActive = mainUiEnabled && (Configs.AlwaysOnConfig.Value || Helper.IsInPilotsSeat(PhotonNetwork.LocalPlayer)) && ClientGame.Current?.PlayerShip?.InteriorAtmosphere != null;
+            bool shouldBeActive = mainUiEnabled && (Configs.AlwaysOnConfig.Value || Helper.IsInPilotsSeat(PhotonNetwork.LocalPlayer)) && Tools.PlayerShipExists;
             if (shouldBeActive != guiActive)
             {
                 guiActive = !guiActive;
                 WindowPos = new(Screen.width * Configs.GUIPosX.Value, Screen.height * Configs.GUIPosY.Value, width, height);
-                voidDrive = ClientGame.Current.PlayerShip.GameObject.GetComponentInChildren<VoidDriveModule>();
+                voidDrive = ClientGame.Current?.PlayerShip?.GameObject?.GetComponentInChildren<VoidDriveModule>();
             }
         }
 

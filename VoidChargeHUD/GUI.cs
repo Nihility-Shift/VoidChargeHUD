@@ -6,8 +6,6 @@ namespace VoidChargeHUD
 {
     internal class GUI : ModSettingsMenu
     {
-        private static string textSizeString = Configs.TextSizeConfig.Value.ToString();
-
         public override string Name() => "Void Charge HUD";
 
         public override void Draw()
@@ -37,17 +35,7 @@ namespace VoidChargeHUD
                 VoidChargeGUI.Instance.UpdateWindowPos();
             }
             Label("");
-            if (GUITools.DrawTextField("Text Size", ref textSizeString, Configs.TextSizeConfig.DefaultValue.ToString()))
-            {
-                if (int.TryParse(textSizeString, out int size))
-                {
-                    Configs.TextSizeConfig.Value = size;
-                }
-                else
-                {
-                    textSizeString = Configs.TextSizeConfig.Value.ToString();
-                }
-            }
+            GUITools.DrawTextField("Text Size", ref Configs.TextSizeConfig);
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using CG.Client;
 using CG.Game;
 using CG.Ship.Modules;
-using Photon.Pun;
 using UnityEngine;
 using VoidManager.Utilities;
 
@@ -31,7 +30,7 @@ namespace VoidChargeHUD
 
         private void Update()
         {
-            bool shouldBeActive = mainUiEnabled && (Configs.AlwaysOnConfig.Value || Helper.IsInPilotsSeat(PhotonNetwork.LocalPlayer)) && Tools.PlayerShipExists;
+            bool shouldBeActive = mainUiEnabled && (Configs.AlwaysOnConfig.Value || Game.CurrentPilot.IsMine) && Game.PlayerShipExists;
             if (shouldBeActive != guiActive)
             {
                 guiActive = !guiActive;

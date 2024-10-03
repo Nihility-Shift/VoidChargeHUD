@@ -14,7 +14,7 @@ Requires:  BepInEx-BepInExPack-5.4.2100, VoidCrewModdingTeam-VoidManager-1.2.2
 
 ### 💡 Function
 
-- Displays the void charge state in the pilot's HUD
+- Displays the void charge state while in the pilot's seat.
 
 ### 🎮 Client Usage
 

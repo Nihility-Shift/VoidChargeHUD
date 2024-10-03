@@ -8,7 +8,7 @@ namespace VoidChargeHUD
         public const string PLUGIN_NAME = "VoidChargeHUD";
         public const string USERS_PLUGIN_NAME = "Void Charge HUD";
         public const string PLUGIN_VERSION = "0.0.3";
-        public const string PLUGIN_DESCRIPTION = "Displays the void charge state in the pilot's HUD. Client side.";
+        public const string PLUGIN_DESCRIPTION = "Displays the void charge state while in the pilot's seat,. Client side.";
         public const string PLUGIN_ORIGINAL_AUTHOR = "18107";
         public const string PLUGIN_AUTHORS = "18107";
         public const string PLUGIN_THUNDERSTORE_ID = "VoidCrewModdingTeam/Void_Charge_HUD";

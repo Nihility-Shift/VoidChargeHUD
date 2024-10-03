@@ -30,7 +30,7 @@ namespace VoidChargeHUD
 
         private void Update()
         {
-            bool shouldBeActive = mainUiEnabled && (Configs.AlwaysOnConfig.Value || Game.CurrentPilot.IsMine) && Game.PlayerShipExists;
+            bool shouldBeActive = mainUiEnabled && (Configs.AlwaysOnConfig.Value && Game.PlayerShipExists || (Game.CurrentPilot != null && Game.CurrentPilot.IsMine));
             if (shouldBeActive != guiActive)
             {
                 guiActive = !guiActive;

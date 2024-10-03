@@ -6,8 +6,10 @@ namespace VoidChargeHUD
     {
         public override MultiplayerType MPType => MultiplayerType.Client;
 
-        public override string Author => "18107";
+        public override string Author => MyPluginInfo.PLUGIN_AUTHORS;
 
-        public override string Description => "Displays the void charge state while in the pilot's seat";
+        public override string Description => MyPluginInfo.PLUGIN_DESCRIPTION;
+
+        public override string ThunderstoreID => MyPluginInfo.PLUGIN_THUNDERSTORE_ID;
     }
 }

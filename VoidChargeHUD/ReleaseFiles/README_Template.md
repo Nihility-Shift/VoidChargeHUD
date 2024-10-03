@@ -1,20 +1,20 @@
 [![](https://img.shields.io/badge/-Void_Crew_Modding_Team-111111?style=just-the-label&logo=github&labelColor=24292f)](https://github.com/Void-Crew-Modding-Team)
-![](https://img.shields.io/badge/Game%20Version-0.27.0-111111?style=flat&labelColor=24292f&color=111111)
+![](https://img.shields.io/badge/Game%20Version-[GameVersion]-111111?style=flat&labelColor=24292f&color=111111)
 [![](https://img.shields.io/discord/1180651062550593536.svg?&logo=discord&logoColor=ffffff&style=flat&label=Discord&labelColor=24292f&color=111111)](https://discord.gg/g2u5wpbMGu "Void Crew Modding Discord")
 
-# Void Charge HUD
+# [UserModName]
 
-Version 0.0.3  
-For Game Version 0.27.0  
-Developed by 18107  
-Requires:  BepInEx-BepInExPack-5.4.2100, VoidCrewModdingTeam-VoidManager-1.2.2
+Version [ModVersion]  
+For Game Version [GameVersion]  
+Developed by [Authors]  
+Requires: [Dependencies]
 
 
 ---------------------
 
 ### 💡 Function
 
-- Displays the void charge state in the pilot's HUD
+- Displays the void charge state while in the pilot's seat.
 
 ### 🎮 Client Usage
 
@@ -34,4 +34,4 @@ Ensure that you have [BepInEx 5](https://thunderstore.io/c/void-crew/p/BepInEx/B
 
 #### ✔️ Mod installation - **Unzip the contents into the BepInEx plugin directory**
 
-Drag and drop `VoidChargeHUD.dll` into `Void Crew\BepInEx\plugins`
+Drag and drop `[ModName].dll` into `Void Crew\BepInEx\plugins`

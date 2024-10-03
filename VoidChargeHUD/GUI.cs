@@ -6,7 +6,7 @@ namespace VoidChargeHUD
 {
     internal class GUI : ModSettingsMenu
     {
-        public override string Name() => "Void Charge HUD";
+        public override string Name() => MyPluginInfo.USERS_PLUGIN_NAME;
 
         public override void Draw()
         {

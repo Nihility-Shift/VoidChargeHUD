@@ -1,3 +1,9 @@
+## 0.0.5
+- Updated for Void Crew 1.1.0
+
+## 0.0.4
+- No Changes
+
 ## 0.0.3
 - Updated for Void Crew 0.27.0 (Update 5).
 
